@@ -5,7 +5,9 @@ return{
             analysis = {
                 inlayHints = {
                     genericTypes = true
-                }
+                },
+                autoSearchPaths = true,
+                diagnosticMode = "openFilesOnly"
             }
         }
     },

@@ -28,6 +28,7 @@ vim.opt.sidescrolloff = 30
 vim.o.signcolumn = "yes"
 
 vim.o.tabstop = 4
+vim.o.ruler = true
 vim.o.shiftwidth = 4
 vim.o.softtabstop = 4
 vim.o.expandtab = true
@@ -55,6 +56,13 @@ vim.keymap.set('i', 'kj', '<Esc>')
 vim.keymap.set('n', '<leader>b', function()
 	print("merge leader");
 end)
+
+vim.api.nvim_create_autocmd({'BufEnter'}, {
+    pattern = {'*.py'},
+    callback = function()
+        vim.o.colorcolumn = "80"
+    end
+})
 
 vim.o.clipboard = "unnamedplus"
 

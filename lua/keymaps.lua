@@ -5,6 +5,16 @@ vim.keymap.set("n", "gvt", function()
 end
 )
 
+vim.keymap.set("n", "gscn", function()
+    vim.o.signcolumn = "no"
+end
+)
+
+vim.keymap.set("n", "gscy", function()
+    vim.o.signcolumn = "yes"
+end
+)
+
 vim.keymap.set("n", "<leader>ca", function()
     vim.lsp.buf.code_action()
 end

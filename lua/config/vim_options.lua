@@ -1,21 +1,4 @@
 vim.cmd.colorscheme('cyberdream')
-vim.api.nvim_set_hl(0, 'Normal', {bg = "none"})
-vim.api.nvim_set_hl(0, 'NormalFloat', {bg = "none"})
-vim.api.nvim_set_hl(0, 'SignColumn', {bg = "none"})
-vim.api.nvim_set_hl(0, 'NormalNC', {bg = "none"})
-vim.api.nvim_set_hl(0, 'NormalFloat', {bg = "none"})
--- vim.api.nvim_set_hl(0, 'CursorLine', {bg = "#916386"})
-vim.api.nvim_set_hl(0, 'CursorLine', {bg = "#360533"})
-vim.api.nvim_set_hl(0, 'Visual', {bg = "#5c077a"})
-vim.api.nvim_set_hl(0, 'MatchParen', {bg = "#f28c07"})
-vim.api.nvim_set_hl(0, 'DiagnosticError', {fg = "#e34b4b"})
-vim.api.nvim_set_hl(0, 'DiagnosticWarn', {fg = "#d1a64f", underline = true})
-vim.api.nvim_set_hl(0, 'DiagnosticVirtualTextError', {fg = "#e34b4b"})
-vim.api.nvim_set_hl(0, 'DiagnosticVirtualTextWarn', {fg = "#d1a64f"})
-vim.api.nvim_set_hl(0, 'DiagnosticVirtualLinesError', {fg = "#e34b4b"})
-vim.api.nvim_set_hl(0, 'DiagnosticVirtualLinesWarn', {fg = "#d1a64f"})
-vim.api.nvim_set_hl(0, 'DiagnosticUnderlineError', {underline = true, fg = "#e34b4b"})
-vim.api.nvim_set_hl(0, 'DiagnosticUnderlineWarn', {fg = "#d1a64f", underline = true})
 
 vim.o.ignorecase = true
 vim.o.smartcase = true
@@ -75,4 +58,3 @@ vim.api.nvim_create_autocmd({'BufEnter'}, {
 })
 
 vim.o.clipboard = "unnamedplus"
-
